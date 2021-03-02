@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+        <style>
+            body{
+                background-color: #fdd;
+
+            }
+            text {
+                font-family: monospace;  
+                font-size: 16px;
+                font-weight: normal;
+            }
+            a {
+                text-decoration: none;
+                color: violet;
+                font-style: italic;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: blueviolet;
+            }
+            p {
+                text-align: left;
+                
+            }
+            h1 {
+                width: 90%;
+                margin-right: 70px;
+                padding: 0.5% 20px;
+                border: 2px solid #000;
+                background-color: #fffcbe;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            img {
+                border: 2px solid #000;
+            }
+            img:hover, #first:hover, #second:hover, #third:hover {
+                cursor: pointer;
+                border-radius: 0;
+                box-shadow: 4px 4px 0 0 #000;
+            }
+            #first, #second, #third {
+                padding: 12px;
+                flex-direction: column;
+                margin-bottom: 9px;
+                align-items: center;
+                border: 2px solid #000;
+                background-color: #d6dcff;
+                box-sizing: border-box;
+            }
+            .posts {
+                padding-top: 3%;
+                grid-column-gap: 2vw;
+                grid-row-gap: 0px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                display: grid;
+            }
+            .contents {
+                padding-bottom: 1.5%;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>ELYA'S BLOG</h1>
+        <div class="contents">
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#first">First post</a></li>
+            <li><a href="#second">Second post</a></li>
+            <li><a href="#third">Third post</a></li>
+        </ul></div>
+        <img src="file:///Users/elya/Downloads/d.jpg" width="900"> 
+
+        <div class="posts">
+        <div id="first">
+        <h2>First post</h2>
+        <h6>Posted on Jan 6 in 2021</h6>
+        <p>A woman finds a pot of treasure on the road while she is returning from work. Delighted with her luck, she decides to keep it. As she is taking it home, it keeps changing. However, her enthusiasm refuses to fade away.</p></div>
+        
+        <div id="second">
+        <h2>Second post</h2>
+        <h6>Posted on Jan 21 in 2021</h6>
+        <p>This classic fable tells the story of a very slow tortoise (another word for turtle) and a speedy hare (another word for rabbit). The tortoise challenges the hare to a race. The hare laughs at the idea that a tortoise could run faster than him, but when the two actually race, the results are surprising.</p></div>
+        
+        <div id="third">
+        <h2>Third post</h2>
+        <h6>Posted on Jan 25 in 2021</h6>
+        <p>Timmie Willie is a country mouse who is accidentally transported to a city in a vegetable basket. When he wakes up, he finds himself in a party and makes a friend. When he is unable to bear the city life, he returns to his home but invites his friend to the village. When his friend visits him, something similar happens.</p></div> </div>
+        
+    </body>
+</html>
