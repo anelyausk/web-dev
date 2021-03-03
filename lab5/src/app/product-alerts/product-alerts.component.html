@@ -1,0 +1,9 @@
+<!-- <div *ngFor="let category in products">
+  <div *ngFor="let items of category.items">
+    
+  </div>
+</div> -->
+
+<p *ngIf="product.price > 700">
+  <button (click)="notify.emit()">Notify Me</button>
+</p>
