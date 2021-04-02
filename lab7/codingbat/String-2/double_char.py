@@ -1,0 +1,8 @@
+def double_char(str):
+    res = ''
+    for i in str:
+        res += i * 2
+    return res
+
+
+print(double_char('The'))
