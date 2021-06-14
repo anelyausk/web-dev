@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, serif;
+  color: black;
+}
+
+a, h3 {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #2f2c27;
+}
+
+p {
+  padding: 0 10px;
+}
+
+.about-us {
+  background-color: black;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+p.about-us {
+  padding: 30px 30px 50px;
+}
+.about-us > img{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.items {
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.main {
+  position: relative;
+}
+
+.main-pic-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: 4ex;
+}
+
+.main-side-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  writing-mode: vertical-lr;
+}
+
+.main-side-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  writing-mode: vertical-lr;
+}
+
+.main-side-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  margin: 0;
+  height: 70px;
+  padding: 60px 0;
+}
+
+/* footer icons: */
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px 10px 20px;
+  /* color: aliceblue; */
+}
+
+.example {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.examples {
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*LOGIN PAGE*/
+form, .form-group {
+  border: 3px solid black;
+  border-radius: 15px;
+  margin: 150px 150px 0 150px;
+  background-color: #FCF7F8;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #2f2c27;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+label {
+  color: black;
+}
+
+button {
+  background-color: #2f2c27;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 20px;
+  background-color: #773344;
+  float: left;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px 30px;
+  width: auto;
+}
+
+/*CHECKBOX*/
+
+.checkboxcont {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+.checkboxcont input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #e8ddcf;
+}
+
+.checkboxcont:hover input ~ .checkmark {
+  background-color: darkgray;
+}
+.checkboxcont input:checked ~ .checkmark {
+  background-color: #b8745c;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxcont input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxcont .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 0px;
+  padding-right: 10px;
+}
+
+
+/*CREATE PORTFOLIO PAGE*/
+.form-group, .form-group-text {
+  padding: 10px;
+  margin: 10px 150px;
+}
+ul {
+  list-style: none;
+}

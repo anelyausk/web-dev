@@ -1,0 +1,18 @@
+<div class="main">
+
+  <h2>PORTFOLIO EXAMPLES</h2>
+  <p>Explore others portfolios here.</p>
+
+  <div class="row">
+    <div class="column">
+      <div *ngFor="let example of examples" class="content">
+        <img src="{{ example.img1 }}" alt="image">
+        <h3 style="color: #2F2C27">{{ example.username }}'s work</h3>
+        <p style="padding: 0 10px; color: #2F2C27">{{ example.description1 }}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<hr style="padding: 0; margin: 0">
+<footer></footer>

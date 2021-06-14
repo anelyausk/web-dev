@@ -4,8 +4,16 @@ from django.http.request import HttpRequest
 
 from api.models import Company, Vacancy
 
+# companies = [
+#     {
+#         'id': i,
+#         'name': f'Product {i}',
+#         'price': i * 1000
+#     }
+#     for i in range(1, 10)
+# ]
 
-# Create your views here.
+
 def companies_list(request):
     companies = Company.objects.all()
     companies_json = [company.to_json() for company in companies]
@@ -13,6 +21,7 @@ def companies_list(request):
 
 
 def company_detail(request, id):
+    # SELECT * FROM company WHERE id = <product_id>
     try:
         company = Company.objects.get(id=id)
     except Exception as e:
